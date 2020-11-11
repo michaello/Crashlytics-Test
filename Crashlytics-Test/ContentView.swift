@@ -6,11 +6,12 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseCrashlytics
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Button("Hello, world! " + didCrash) { fatalError() }
     }
 }
 

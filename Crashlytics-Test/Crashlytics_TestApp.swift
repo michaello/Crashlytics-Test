@@ -9,6 +9,9 @@ import SwiftUI
 
 @main
 struct Crashlytics_TestApp: App {
+
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     var body: some Scene {
         WindowGroup {
             ContentView()
